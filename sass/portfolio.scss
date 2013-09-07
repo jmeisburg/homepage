@@ -1,0 +1,128 @@
+@import "compass/css3";
+@import "settings";
+
+.coming_soon {
+	position: absolute;
+	top: 200px;
+	z-index: 2;
+	background: yellow;
+	width: 100%;
+}
+
+.coming_soon h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.portfolio {
+	padding: 10% 5% 10% 5%;
+
+}
+
+
+.thumbnail {
+	position: relative;
+	padding: 0;
+	list-style: none;
+}
+
+.thumbnail li {
+  @include border-radius(3px);
+   @include background-clip(padding-box); 
+   @include box-shadow(0 1px 3px 0 rgba(0,0,0,.2));
+  padding: 5% 5% 0 5%;
+  margin: 0 0 10% 0;
+  float: none;
+  position: relative;
+  display: block;
+  background: #fff;
+}
+
+.thumbnail li:hover {
+	@include box-shadow(0 1px 3px 0 rgba(0,0,0,.4));
+}
+
+.thumbnail li a {
+	text-decoration: none;
+	display: block;
+	position: relative;
+	color: #555;
+}
+
+.thumbnail li a img {
+	@include border-radius(3px); 
+	@include background-clip(padding-box); 
+}
+
+.thumbnail .description {
+	padding: 5%;
+	position: relative;
+	overflow: hidden;
+}
+
+.r-arrow {
+	font-size: 50px;
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.thumbnail p {
+	margin: 0;
+	font-size: emCalc(14);
+	color: #888;
+	line-height: emCalc(19);
+}
+
+.thumbnail ul {
+	margin: 0;
+}
+
+
+@media (min-width: 320px) {
+ .thumbnail li {
+ 	float: left;
+ 	width: 47.5%;
+ 	margin: 0 5% 5% 0;
+ 	padding: 1.6666666% 1.6666666% 0 1.66666%;
+ }
+
+ .thumbnail li:nth-child(2n) {
+	margin-right: 0;
+ }
+
+}
+
+
+@media (min-width: 640px) {
+.thumbnail li {
+ 	width: 32.0%;
+ 	margin: 0 2% 2% 0;
+ 	padding: 0.7% 0.7% 0 0.7%;
+	}
+
+ .thumbnail li:nth-child(2n) {
+	margin-right: 2%;
+ }
+
+.thumbnail li:nth-child(3n) {
+	margin-right: 0;
+ }
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+	.portfolio {
+		padding: 60px 5%;
+	}
+}
+
+@media (min-width: 1280px) {
+
+}

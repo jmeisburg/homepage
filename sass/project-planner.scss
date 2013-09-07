@@ -1,0 +1,408 @@
+@import "compass/css3";
+@import "settings";
+
+.project-top  {
+	padding: 5% 5% 5% 5%;
+}
+
+.full-width {
+	display: inline-block;
+}
+
+.project-top,
+.project-form {
+	width: 100%;
+	text-align: center;    
+}
+
+.project-form-row h2 span,
+.budget h2 span {
+    color: #5adae2;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.project-top {
+	background: #5adae2;
+}
+
+.project-top h2 {
+	color: white;
+}
+
+.project-form {
+	background: url(../img/paper_fibers.png) repeat;
+}
+
+.project-form input,
+.project-form textarea {
+	color: #555555;
+	display: inline-block;
+	margin: 0 0 25px;
+	border: 1px solid #c2c2c2;
+	border-radius: 5px;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+.project-form textarea {
+	height: 190px;	
+}
+
+.project-form-row:first-child {
+	margin-top: 35px;
+}
+
+.project-form-row {
+	padding-bottom: 35px;
+	margin-bottom: 45px;
+	border-bottom: 1px solid #D4D4D3;	
+}
+
+.budget {
+	background-color: rgba(255,255,255,0.47);
+	padding: 30px 30px 30px;
+	width: 932px;
+	display: inline-block;
+}
+
+.budget h2 {
+	text-align: left;
+}
+
+.budget ul li {
+	list-style: none;
+}
+
+.budget ul li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.budget input[type="radio"] {
+    visibility: hidden;
+}
+
+.budget .less-5k {
+    background: url(../img/radio-sprite.png) no-repeat scroll 0 -160px transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 160px;
+    margin-left: 51px;
+    margin-right: 57px;
+    width: 160px;
+}
+
+.budget .less-5k:hover {
+    background-position: 0 0;
+}
+.budget .less-5k.active {
+    background-position: 0 0;
+}
+.budget .b-5-10k {
+    background: url(../img/radio-sprite.png) no-repeat scroll -160px -160px transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 160px;
+    margin-right: 57px;
+    width: 160px;
+}
+.budget .b-5-10k:hover {
+    background-position: -160px 0;
+}
+
+.budget .b-5-10k.active {
+    background-position: -160px 0;
+}
+
+.budget .b-10-15k {
+    background: url(../img/radio-sprite.png) no-repeat scroll -320px -160px transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 160px;
+    margin-right: 57px;
+    width: 160px;
+}
+
+.budget .b-10-15k:hover {
+    background-position: -320px 0;
+}
+
+.budget .b-10-15k.active {
+    background-position: -320px 0;
+}
+
+.budget .over-15k {
+    background: url(../img/radio-sprite.png) no-repeat scroll -480px -160px transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 160px;
+    width: 160px;
+}
+
+.budget .over-15k:hover {
+    background-position: -480px 0;
+}
+
+.budget .over-15k.active {
+    background-position: -480px 0;
+}
+
+button#submit.large {
+    margin: 50px 0 80px 0;
+    padding: 13px 87px;
+    border-radius: 5px;
+    font-weight: normal;
+    }
+
+    .project-top h2 {
+        color: white;
+    }
+
+@media (max-width: 640px) {
+.budget {
+    overflow: hidden;
+    width: 245px;
+	padding: 25px 0;
+}
+
+.budget h2 {
+	text-align: center;
+}
+
+.budget .less-5k {
+    background-position: 0 -80px;
+    background-size: 320px auto;
+    height: 80px;
+    margin-bottom: 25px;
+    margin-left: 22px;
+    margin-right: 25px;
+    width: 80px;
+}
+.budget .less-5k:hover {
+    background-position: 0 0;
+}
+
+.budget .less-5k.active {
+    background-position: 0 0;
+}
+
+.budget .b-5-10k {
+    background-position: -80px -80px;
+    background-size: 320px auto;
+    height: 80px;
+    margin-left: 13px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    width: 80px;
+}
+.budget .b-5-10k:hover {
+    background-position: -80px 0;
+}
+
+.budget .b-5-10k.active {
+    background-position: -80px 0;
+}
+
+.budget .b-10-15k {
+    background-position: -160px -80px;
+    background-size: 320px auto;
+    height: 80px;
+    margin-left: 22px;
+    margin-right: 25px;
+    width: 80px;
+}
+
+.budget .b-10-15k:hover {
+    background-position: -160px 0;
+}
+
+.budget .b-10-15k.active {
+    background-position: -160px 0;
+}
+
+.budget .over-15k {
+    background-position: -240px -80px;
+    background-size: 320px auto;
+    height: 80px;
+    width: 80px;
+    margin-left: 13px;
+}
+
+.budget .over-15k:hover {
+    background-position: -240px 0;
+}
+
+.budget .over-15k.active {
+    background-position: -240px 0;
+}
+
+}
+
+
+@media (min-width: 640px) {
+    .project-form input,
+    .project-form textarea,
+    h1,
+    h2 {
+        text-align: left;
+    }
+
+    button#submit.large {
+        float: right;
+        padding: 13px 30px;
+    }
+
+    .project-form {
+        padding: 0 5% 5% 5%;
+    }
+
+
+}
+
+@media (min-width: 640px) and (max-width: 767px) { 
+
+.budget {
+    overflow: hidden;
+    width: 560px;
+    padding: 30px;
+}
+
+.budget .less-5k {
+    background-position: 0 -80px;
+    background-size: 320px auto;
+    height: 80px;
+    margin-right: 25px;
+    width: 80px;
+}
+.budget .less-5k:hover {
+    background-position: 0 0;
+}
+
+.budget .less-5k.active {
+    background-position: 0 0;
+}
+
+.budget .b-5-10k {
+    background-position: -80px -80px;
+    background-size: 320px auto;
+    height: 80px;
+    margin-right: 25px;
+    width: 80px;
+}
+
+.budget .b-5-10k:hover {
+    background-position: -80px 0;
+}
+
+.budget .b-5-10k.active {
+    background-position: -80px 0;
+}
+
+.budget .b-10-15k {
+    background-position: -160px -80px;
+    background-size: 320px auto;
+    height: 80px;
+    margin-right: 25px;
+    width: 80px;
+}
+.budget .b-10-15k:hover {
+    background-position: -160px 0;
+}
+
+.budget .b-10-15k.active {
+    background-position: -160px 0;
+}
+
+.budget .over-15k {
+    background-position: -240px -80px;
+    background-size: 320px auto;
+    height: 80px;
+    width: 80px;
+}
+
+.budget .over-15k:hover {
+    background-position: -240px 0;
+}
+
+.budget .over-15k.active {
+    background-position: -240px 0;
+}
+
+}	
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+.budget {
+    overflow: hidden;
+    width: 726px;
+    padding: 30px 30px 30px;
+}
+
+
+.budget .less-5k {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.budget.radios.less-5k {
+    margin-left: 0;
+    margin-right: 8px;
+}
+.budget .b-5-10k {
+    margin-right: 8px;
+}
+.budget .b-10-15k {
+    margin-right: 8px;
+}
+
+}	
+
+
+@media (min-width: 1024px) {
+
+.project-form-row .large-6 {
+    width: 49%;
+}
+
+.budget {
+    overflow: hidden;
+    width: 913px;
+}
+
+.budget .less-5k {
+    margin-left: 22px;
+}
+
+   h2 {
+        font-size: 2.3125em;
+    }
+
+    .project-form-row h2 span,
+    .budget h2 span {
+        font-size: 57px;
+    }
+
+
+    .project-form {
+        padding: 0 5% 2% 5%;
+    }
+
+
+}
+
+@media (min-width: 1280px) {
+.budget {
+    overflow: hidden;
+    width: 1000px;
+}
+
+.budget .less-5k {
+    margin-left: 57px;
+}
+
+}
+

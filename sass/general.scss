@@ -1,0 +1,456 @@
+@import "compass/css3";
+@import "settings";
+
+/*Font*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.columns {
+	padding: 0;
+}
+
+html {
+     overflow-y: -moz-scrollbars-vertical;
+     overflow-y: scroll;
+     height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: emCalc(36);
+	margin-bottom: .14em;
+}
+
+h2 {
+  font-size: emCalc(24);
+  margin-bottom: .84em;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+p {
+	margin-bottom: 1.2em;
+	font-size: emCalc(15);
+
+}
+
+ul {
+	font-size: emCalc(14);
+	margin-bottom: 1.8em;
+}
+
+li {
+    list-style: none;
+    line-height: 2em;
+}		
+
+a {
+	color: #fff;		
+}
+
+a:hover, a:active {
+	color: #5adae2;
+}
+
+button {
+	background: #5adae2;
+	color: #fff;
+	border: none;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+button:hover {
+	background: #000;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.6);
+}
+
+input[type="text"]:focus {
+	color: #fff;
+}
+
+hr {
+	border: 1px dotted #ddd;
+	margin: 0;
+}
+
+::selection {
+	background: #888;
+	color: #fff;
+}
+
+
+.dark {
+	-webkit-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
+	border-bottom: 1px solid #ddd;
+	background: url(../img/paper_fibers.png) repeat;
+}
+
+
+.logo, 
+header nav li a, 
+.top, 
+.facebook a, 
+.twitter a, 
+.linkedin a {
+ transition: all .3s;
+ }
+
+.center {
+	text-align: center !important;
+}
+ /*END-General*/
+
+p_left {
+	padding-left: 5%;
+}
+
+/*Header*/
+header {
+    background-color: #161616;
+    height: emCalc(60);
+    position: relative;
+}
+
+.icon {
+	color: white;
+}
+
+.icon.active {
+	opacity: 0.5;
+}
+
+.logo {
+	width: emCalc(24);
+	height: emCalc(24);
+	font-size: emCalc(24);
+	float: left;
+	top: emCalc(7);
+	left: emCalc(10);
+	position: relative;
+}
+
+.logo:hover {
+	opacity: 0.5;
+	color: white;
+}
+
+#mobile_icon {
+	font-size: emCalc(24);
+	float: right;
+	position: absolute;
+	right: emCalc(10);
+	top: 17px;
+}
+
+	.social {
+		display: none;
+	}
+
+	.twitter-follow-button {
+		position: relative;
+		top: -1px;
+	}
+
+.display {
+	display: none;
+}
+
+nav {
+	display: none;
+	background: #222;
+	position: absolute;
+	top:60px;
+	right: 0;
+	width: 100%;
+	text-align: left;
+	font-size: emCalc(21);
+	z-index: 1;
+}
+
+.nav ul {
+	font-size: emCalc(16); 
+}
+
+header nav li {
+	border-top: 1px solid #212121;
+	border-bottom: 1px solid #363636;
+	text-align: center;
+	display: block;
+}
+
+header nav ul {
+	margin-bottom: 0;
+}
+
+header nav li a {
+	display: block;
+	padding: 20px;
+	font-size: emCalc(18);
+}
+
+/*END-Header*/
+
+
+/*main*/
+
+p.intro {
+	font-size: emCalc(20);
+	line-height: 1.4em;
+	color: #888;
+	margin-bottom: .8em;
+}
+
+/*Footer*/
+
+.left {
+	float: none !important;
+}
+
+.right {
+	display: none;
+}
+
+
+footer {
+	background: url(../img/mooning.png) repeat;
+	background-color: #000;
+	position: relative;
+	padding: 40px 5% 0 5%;
+	-webkit-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
+	border-bottom: 1px solid #ddd;
+	z-index: 2;
+}
+
+footer p {
+	text-align: center;
+	font-size: emCalc(14);
+}
+
+.left, .right {
+	position: relative;
+	top: -10px;
+}
+
+.arrowcontainer {
+	position: absolute;
+	top: -50px;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.top {
+	background-image: url(../img/arrow_bg.png); 	
+	position: absolute;
+	width: 118px;
+	height: 79px;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -60px;
+	z-index: 1
+}
+
+a:hover.top {
+	bottom: -20px;
+}
+@media (min-width: 480px) {
+	.logo {
+		left: 1.1em;
+	}
+
+	#mobile_icon {
+		right: 1em; 
+	}
+}
+
+@media (min-width: 640px) {
+
+	p.intro {
+		font-size: emCalc(24);
+	}
+
+	.logo {
+		font-size: emCalc(42);
+		top: emCalc(5);
+		left: emCalc(12);
+	}
+
+	#mobile_icon {
+		display: none;
+	}
+	
+	header {
+		height: emCalc(92);
+	}
+
+	header nav {
+		float: right;
+		display: block;
+		position: static;
+		background: transparent;
+		width: auto;
+	}
+
+	header nav li {
+		display: inline-block;
+		float: left;	
+		position: relative;
+		height: emCalc(92);
+		border: 0;
+		right: emCalc(16);
+	}
+
+	header nav li a {
+		display: block;
+		line-height: 60px;
+		padding: 15px;
+		font-size: emCalc(14);
+	}
+	
+
+	.current_page a {
+		color: #888;
+	}
+
+.left {
+	float: left !important;
+}
+
+.right {
+	float: right !important;
+	display: inline-block;
+	position: relative;
+	}
+	
+}
+
+@media (min-width: 768px) { 
+
+	.logo {
+		left: 0.9em;
+	}
+
+	header nav li {
+		right: emCalc(18); 
+	}
+}	
+
+
+@media (min-width: 1024px) {
+	
+	h1 {
+	font-size: emCalc(70);
+	}
+
+	.logo {
+		left: 1.1em;
+	}
+
+	.social {
+		position: relative;
+		right: 3.3em;
+	}
+
+	header nav {
+		margin-right: 20%;
+	}
+
+	li {
+		font-size: emCalc(18);
+	}
+
+	.social {
+		display: block;
+		float: right;	
+		list-style: none;
+		margin: 25px 0 0 0;
+	}
+
+	.social li {
+		display: inline-block;
+		padding-left: 30px;
+	}
+
+	.social li a {
+		font-size: emCalc(40);
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.left {
+	left: 0px;
+    }
+}
+
+@media (min-width: 1280px) {
+	.logo {
+			left: 0;
+		}
+
+	.social {
+		right: 0em;
+	}
+}

@@ -1,0 +1,156 @@
+@import "compass/css3";
+@import "settings";
+
+/*remove styling*/
+.post-edit-link,
+.categories-links,
+.url.fn.n,
+.vcard,
+.comments-link a {
+	display: none;
+}
+
+.entry-header,
+.entry-meta {
+	background: none;
+}
+
+.entry-meta {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+
+.page {
+	 background: url(../img/paper_fibers.png) repeat;
+}
+
+.container {
+	padding: 5% 5% 30% 5%;	
+
+}
+
+#primary {
+	padding: 20px 25px;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+#post-4 {
+	background-color: #fff;
+}
+
+
+.entry-header h1.entry-title {
+	font-size: 2.0em;
+	line-height: 1.0em;
+	padding-bottom: 0;
+}
+
+.entry-title a {
+	color: black;
+}
+
+.entry-title a:hover {
+	color: black;
+}
+
+
+span.leave-reply {
+	color: #5adae2;
+	font-weight: 700;
+}
+
+span.leave-reply:hover {
+	text-decoration: underline;
+}
+
+.post-edit-link,
+ {
+	color: black;
+}
+
+
+time.entry-date:hover,
+.post-edit-link:hover,
+ {
+	color: #5adae2;
+}
+
+time.entry-date {
+	color: #888;
+	font-size: 1.25em;
+	line-height: 1.4em;
+}
+
+.entry-meta .date {
+ position: relative;
+ top: 12px;
+}
+
+.entry-content {
+	margin-top: 56px;
+	background-color: #eeeeee;
+	padding: 20px;
+	border-left: 7px solid #5adae2;
+}
+
+.entry-content p {
+	margin-bottom: 0;
+}
+
+
+
+@media (min-width: 480px) {
+	.entry-content {
+	margin-top: 25px;
+	}
+
+	.container {
+	padding: 5% 5% 20% 5%;	
+	}
+}
+
+@media (min-width: 640px) {
+	.entry-content {
+	margin-top: -5px;
+	}
+
+	.container {
+	padding: 5% 5% 16% 5%;	
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+.entry-header h1.entry-title {
+	font-size: 2.8em;
+	line-height: 1.4em;
+	padding-bottom: 0;
+}
+
+p {
+	font-size: 1.5em;	
+	line-height: 1.4em;
+}
+
+.entry-meta .date {
+ top: -15px;
+}
+
+.container {
+	padding: 5% 5% 11% 5%;	
+	}
+
+}
+
+@media (min-width: 1280px) {
+
+.container {
+	padding: 5% 0 9% 0;
+}
+
+}
